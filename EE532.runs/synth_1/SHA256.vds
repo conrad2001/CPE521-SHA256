@@ -1,0 +1,753 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Jun  2 11:08:43 2021
+# Process ID: 11860
+# Current directory: C:/Users/User01/EE532/EE532.runs/synth_1
+# Command line: vivado.exe -log SHA256.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source SHA256.tcl
+# Log file: C:/Users/User01/EE532/EE532.runs/synth_1/SHA256.vds
+# Journal file: C:/Users/User01/EE532/EE532.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source SHA256.tcl -notrace
+Command: synth_design -top SHA256 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 24288 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 355.750 ; gain = 98.234
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'SHA256' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Compression' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'SIGMA0' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SIGMA0.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'rotate' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/rotate.sv:23]
+	Parameter i bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'rotate' (1#1) [C:/Users/User01/EE532/EE532.srcs/sources_1/new/rotate.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'rotate__parameterized0' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/rotate.sv:23]
+	Parameter i bound to: 13 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'rotate__parameterized0' (1#1) [C:/Users/User01/EE532/EE532.srcs/sources_1/new/rotate.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'rotate__parameterized1' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/rotate.sv:23]
+	Parameter i bound to: 22 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'rotate__parameterized1' (1#1) [C:/Users/User01/EE532/EE532.srcs/sources_1/new/rotate.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'SIGMA0' (2#1) [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SIGMA0.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'SIGMA1' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SIGMA1.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'rotate__parameterized2' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/rotate.sv:23]
+	Parameter i bound to: 6 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'rotate__parameterized2' (2#1) [C:/Users/User01/EE532/EE532.srcs/sources_1/new/rotate.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'rotate__parameterized3' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/rotate.sv:23]
+	Parameter i bound to: 11 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'rotate__parameterized3' (2#1) [C:/Users/User01/EE532/EE532.srcs/sources_1/new/rotate.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'rotate__parameterized4' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/rotate.sv:23]
+	Parameter i bound to: 25 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'rotate__parameterized4' (2#1) [C:/Users/User01/EE532/EE532.srcs/sources_1/new/rotate.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'SIGMA1' (3#1) [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SIGMA1.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'CHOOSE' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/CHOOSE.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'CHOOSE' (4#1) [C:/Users/User01/EE532/EE532.srcs/sources_1/new/CHOOSE.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'Maj' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Maj.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'Maj' (5#1) [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Maj.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'rom' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/rom.sv:23]
+	Parameter K bound to: 2048'b01000010100010100010111110011000011100010011011101000100100100011011010111000000111110111100111111101001101101011101101110100101001110010101011011000010010110110101100111110001000100011111000110010010001111111000001010100100101010110001110001011110110101011101100000000111101010101001100000010010100000110101101100000001001001000011000110000101101111100101010100001100011111011100001101110010101111100101110101110100100000001101111010110001111111101001101111011100000001101010011111000001100110111111000101110100111001001001101101101001110000011110111110111110010001111000011000001111110000011001110111000110001001000000110010100001110011000010110111101001001011000110111101001010011101001000010010101010010111001011000010101001110111000111011011111001100010001101101010011000001111100101000101010010101010000011000111000110011011011011000000000011001001111100100010111111010110010111111111000111110001101110000000001011111100111101010110100111100100010100011100000110110010100110001101010001000101000010100100101001011001110010011110110111000010101000010100101110000110110010000100111000010011010010110001101101111111000101001100111000000011010001001101100101000010100111001101010100011101100110101000001010101110111000000111000010110010010010111010010010011100100010110010000101101000101011111111101000101000011010100000011010011001100100101111000010010010111000101101110000110001110110110001010001101000111101000110010010111010000001100111010110100110010000011000100100111101000000111000110101100001010001000001101010101000000111000000011001101001001100000100010110000111100011011101101100000010000010011101001000011101110100110000110100101100001011110010110101001110010001110000001100101100110100111011011000101010100100101001011011100111001100101001001111011010000010111001101111111100110111010010001111100000101110111001111000101001010110001101101111100001001100100001111000000101001000110011000111000000100000100010010000101111101111111111111010101001000101000001101100111010111011111011111001101000111111011111000110011100010111100011110010 
+INFO: [Synth 8-6155] done synthesizing module 'rom' (6#1) [C:/Users/User01/EE532/EE532.srcs/sources_1/new/rom.sv:23]
+WARNING: [Synth 8-689] width (32) of port connection 'addr' does not match port width (6) of module 'rom' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:61]
+WARNING: [Synth 8-6014] Unused sequential element temp1_reg was removed.  [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+WARNING: [Synth 8-6014] Unused sequential element temp2_reg was removed.  [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:77]
+WARNING: [Synth 8-87] always_comb on 'flg_reg' did not result in combinational logic [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:65]
+WARNING: [Synth 8-87] always_comb on 'i_reg' did not result in combinational logic [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:61]
+WARNING: [Synth 8-87] always_comb on 'hash_var_reg[0]' did not result in combinational logic [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+WARNING: [Synth 8-87] always_comb on 'hash_var_reg[1]' did not result in combinational logic [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+WARNING: [Synth 8-87] always_comb on 'hash_var_reg[2]' did not result in combinational logic [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+WARNING: [Synth 8-87] always_comb on 'hash_var_reg[3]' did not result in combinational logic [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+WARNING: [Synth 8-87] always_comb on 'hash_var_reg[4]' did not result in combinational logic [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+WARNING: [Synth 8-87] always_comb on 'hash_var_reg[5]' did not result in combinational logic [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+WARNING: [Synth 8-87] always_comb on 'hash_var_reg[6]' did not result in combinational logic [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+WARNING: [Synth 8-87] always_comb on 'hash_var_reg[7]' did not result in combinational logic [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+WARNING: [Synth 8-3848] Net y[8] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[9] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[10] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[11] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[12] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[13] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[14] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[15] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[16] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[17] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[18] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[19] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[20] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[21] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[22] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[23] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[24] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[25] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[26] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[27] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[28] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[29] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[30] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[31] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[32] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[33] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[34] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[35] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[36] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[37] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[38] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[39] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[40] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[41] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[42] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[43] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[44] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[45] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[46] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[47] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[48] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[49] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[50] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[51] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[52] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[53] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[54] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[55] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[56] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[57] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[58] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[59] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[60] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[61] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[62] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+WARNING: [Synth 8-3848] Net y[63] in module/entity Compression does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:28]
+INFO: [Synth 8-6155] done synthesizing module 'Compression' (7#1) [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:24]
+CRITICAL WARNING: [Synth 8-5972] variable 'flg2' cannot be written by both continuous and procedural assignments [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:44]
+CRITICAL WARNING: [Synth 8-5972] variable 'flg' cannot be written by both continuous and procedural assignments [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:45]
+WARNING: [Synth 8-3848] Net w[0] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[1] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[2] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[3] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[4] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[5] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[6] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[7] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[8] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[9] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[10] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[11] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[12] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[13] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[14] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[15] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[16] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[17] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[18] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[19] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[20] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[21] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[22] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[23] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[24] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[25] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[26] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[27] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[28] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[29] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[30] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[31] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[32] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[33] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[34] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[35] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[36] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[37] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[38] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[39] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[40] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[41] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[42] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+WARNING: [Synth 8-3848] Net w[43] in module/entity SHA256 does not have driver. [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:32]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'SHA256' (8#1) [C:/Users/User01/EE532/EE532.srcs/sources_1/new/SHA256.sv:23]
+WARNING: [Synth 8-3917] design SHA256 has port flg driven by constant 0
+WARNING: [Synth 8-3331] design Compression has unconnected port y[8][31]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[8][30]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[8][29]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[8][28]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[8][27]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[8][26]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[8][25]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[8][24]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[8][23]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[8][22]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[8][21]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[8][20]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[8][19]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[8][18]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[8][17]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[8][16]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[8][15]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[8][14]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[8][13]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[8][12]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[8][11]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[8][10]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[8][9]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[8][8]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[8][7]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[8][6]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[8][5]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[8][4]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[8][3]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[8][2]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[8][1]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[8][0]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[9][31]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[9][30]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[9][29]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[9][28]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[9][27]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[9][26]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[9][25]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[9][24]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[9][23]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[9][22]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[9][21]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[9][20]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[9][19]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[9][18]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[9][17]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[9][16]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[9][15]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[9][14]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[9][13]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[9][12]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[9][11]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[9][10]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[9][9]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[9][8]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[9][7]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[9][6]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[9][5]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[9][4]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[9][3]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[9][2]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[9][1]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[9][0]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[10][31]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[10][30]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[10][29]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[10][28]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[10][27]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[10][26]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[10][25]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[10][24]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[10][23]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[10][22]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[10][21]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[10][20]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[10][19]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[10][18]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[10][17]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[10][16]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[10][15]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[10][14]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[10][13]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[10][12]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[10][11]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[10][10]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[10][9]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[10][8]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[10][7]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[10][6]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[10][5]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[10][4]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[10][3]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[10][2]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[10][1]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[10][0]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[11][31]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[11][30]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[11][29]
+WARNING: [Synth 8-3331] design Compression has unconnected port y[11][28]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 410.949 ; gain = 153.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 410.949 ; gain = 153.434
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 410.949 ; gain = 153.434
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-5545] ROM "hash_var" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-327] inferring latch for variable 'flg_reg' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:65]
+WARNING: [Synth 8-327] inferring latch for variable 'i_reg' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:61]
+WARNING: [Synth 8-327] inferring latch for variable 'hash_var_reg[0]' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+WARNING: [Synth 8-327] inferring latch for variable 'hash_var_reg[1]' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+WARNING: [Synth 8-327] inferring latch for variable 'hash_var_reg[2]' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+WARNING: [Synth 8-327] inferring latch for variable 'hash_var_reg[3]' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+WARNING: [Synth 8-327] inferring latch for variable 'hash_var_reg[4]' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+WARNING: [Synth 8-327] inferring latch for variable 'hash_var_reg[5]' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+WARNING: [Synth 8-327] inferring latch for variable 'hash_var_reg[6]' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+WARNING: [Synth 8-327] inferring latch for variable 'hash_var_reg[7]' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 410.949 ; gain = 153.434
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 20    
+	   5 Input     32 Bit       Adders := 2     
+	   3 Input     32 Bit       Adders := 2     
++---XORs : 
+	   3 Input     32 Bit         XORs := 6     
+	   2 Input     32 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 16    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 16    
+	   2 Input      1 Bit        Muxes := 6     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module SIGMA0 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module SIGMA1 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module CHOOSE 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
+Module Maj 
+Detailed RTL Component Info : 
++---XORs : 
+	   3 Input     32 Bit         XORs := 1     
+Module Compression 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 10    
+	   5 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "hash_var" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "hash_var" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3917] design SHA256 has port flg driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 649.070 ; gain = 391.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|rom         | K          | 64x32         | LUT            | 
+|Compression | rom_/K     | 64x32         | LUT            | 
+|Compression | rom_/K     | 64x32         | LUT            | 
++------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 649.070 ; gain = 391.555
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 649.070 ; gain = 391.555
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[0][31] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[0][30] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[0][29] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[0][28] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[0][27] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[0][26] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[0][25] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[0][24] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[0][23] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[0][22] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[0][21] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[0][20] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[0][19] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[0][18] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[0][17] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[0][16] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[0][15] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[0][14] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[0][13] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[0][12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[0][11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[0][10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[0][9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[0][8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[0][7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[0][6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[0][5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[0][4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[0][3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[0][2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[0][1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[0][0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[1][31] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[1][30] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[1][29] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[1][28] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[1][27] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[1][26] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[1][25] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[1][24] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[1][23] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[1][22] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[1][21] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[1][20] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[1][19] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[1][18] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[1][17] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[1][16] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[1][15] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[1][14] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[1][13] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[1][12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[1][11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[1][10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[1][9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[1][8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[1][7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[1][6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[1][5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[1][4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[1][3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[1][2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[1][1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[1][0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[2][31] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[2][30] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[2][29] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[2][28] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[2][27] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[2][26] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[2][25] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[2][24] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[2][23] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[2][22] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[2][21] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[2][20] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[2][19] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[2][18] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[2][17] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[2][16] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[2][15] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[2][14] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[2][13] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[2][12] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[2][11] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[2][10] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[2][9] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[2][8] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[2][7] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[2][6] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[2][5] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[2][4] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[2][3] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[2][2] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[2][1] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[2][0] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[3][31] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[3][30] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[3][29] to constant 0
+WARNING: [Synth 8-3295] tying undriven pin compression_1:w[3][28] to constant 0
+INFO: [Common 17-14] Message 'Synth 8-3295' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 649.070 ; gain = 391.555
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][13] with 1st driver pin 'compression_1/hash_var_reg[0][13]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][13] with 2nd driver pin 'compression_1/hash_var_reg[0][13]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][2] with 1st driver pin 'compression_1/hash_var_reg[0][2]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][2] with 2nd driver pin 'compression_1/hash_var_reg[0][2]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][22] with 1st driver pin 'compression_1/hash_var_reg[0][22]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][22] with 2nd driver pin 'compression_1/hash_var_reg[0][22]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][14] with 1st driver pin 'compression_1/hash_var_reg[0][14]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][14] with 2nd driver pin 'compression_1/hash_var_reg[0][14]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][3] with 1st driver pin 'compression_1/hash_var_reg[0][3]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][3] with 2nd driver pin 'compression_1/hash_var_reg[0][3]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][23] with 1st driver pin 'compression_1/hash_var_reg[0][23]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][23] with 2nd driver pin 'compression_1/hash_var_reg[0][23]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][15] with 1st driver pin 'compression_1/hash_var_reg[0][15]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][15] with 2nd driver pin 'compression_1/hash_var_reg[0][15]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][4] with 1st driver pin 'compression_1/hash_var_reg[0][4]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][4] with 2nd driver pin 'compression_1/hash_var_reg[0][4]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][24] with 1st driver pin 'compression_1/hash_var_reg[0][24]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][24] with 2nd driver pin 'compression_1/hash_var_reg[0][24]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][16] with 1st driver pin 'compression_1/hash_var_reg[0][16]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][16] with 2nd driver pin 'compression_1/hash_var_reg[0][16]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][5] with 1st driver pin 'compression_1/hash_var_reg[0][5]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][5] with 2nd driver pin 'compression_1/hash_var_reg[0][5]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][25] with 1st driver pin 'compression_1/hash_var_reg[0][25]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][25] with 2nd driver pin 'compression_1/hash_var_reg[0][25]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][17] with 1st driver pin 'compression_1/hash_var_reg[0][17]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][17] with 2nd driver pin 'compression_1/hash_var_reg[0][17]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][6] with 1st driver pin 'compression_1/hash_var_reg[0][6]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][6] with 2nd driver pin 'compression_1/hash_var_reg[0][6]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][26] with 1st driver pin 'compression_1/hash_var_reg[0][26]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][26] with 2nd driver pin 'compression_1/hash_var_reg[0][26]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][18] with 1st driver pin 'compression_1/hash_var_reg[0][18]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][18] with 2nd driver pin 'compression_1/hash_var_reg[0][18]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][7] with 1st driver pin 'compression_1/hash_var_reg[0][7]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][7] with 2nd driver pin 'compression_1/hash_var_reg[0][7]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][27] with 1st driver pin 'compression_1/hash_var_reg[0][27]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][27] with 2nd driver pin 'compression_1/hash_var_reg[0][27]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][19] with 1st driver pin 'compression_1/hash_var_reg[0][19]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][19] with 2nd driver pin 'compression_1/hash_var_reg[0][19]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][8] with 1st driver pin 'compression_1/hash_var_reg[0][8]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][8] with 2nd driver pin 'compression_1/hash_var_reg[0][8]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][28] with 1st driver pin 'compression_1/hash_var_reg[0][28]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][28] with 2nd driver pin 'compression_1/hash_var_reg[0][28]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][20] with 1st driver pin 'compression_1/hash_var_reg[0][20]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][20] with 2nd driver pin 'compression_1/hash_var_reg[0][20]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][9] with 1st driver pin 'compression_1/hash_var_reg[0][9]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][9] with 2nd driver pin 'compression_1/hash_var_reg[0][9]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][29] with 1st driver pin 'compression_1/hash_var_reg[0][29]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][29] with 2nd driver pin 'compression_1/hash_var_reg[0][29]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][21] with 1st driver pin 'compression_1/hash_var_reg[0][21]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][21] with 2nd driver pin 'compression_1/hash_var_reg[0][21]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][10] with 1st driver pin 'compression_1/hash_var_reg[0][10]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][10] with 2nd driver pin 'compression_1/hash_var_reg[0][10]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][30] with 1st driver pin 'compression_1/hash_var_reg[0][30]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][30] with 2nd driver pin 'compression_1/hash_var_reg[0][30]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][11] with 1st driver pin 'compression_1/hash_var_reg[0][11]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][11] with 2nd driver pin 'compression_1/hash_var_reg[0][11]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][31] with 1st driver pin 'compression_1/hash_var_reg[0][31]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][31] with 2nd driver pin 'compression_1/hash_var_reg[0][31]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][12] with 1st driver pin 'compression_1/hash_var_reg[0][12]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][12] with 2nd driver pin 'compression_1/hash_var_reg[0][12]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][0] with 1st driver pin 'compression_1/hash_var_reg[0][0]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][0] with 2nd driver pin 'compression_1/hash_var_reg[0][0]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][1] with 1st driver pin 'compression_1/hash_var_reg[0][1]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[0][1] with 2nd driver pin 'compression_1/hash_var_reg[0][1]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[4][11] with 1st driver pin 'compression_1/hash_var_reg[4][11]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[4][11] with 2nd driver pin 'compression_1/hash_var_reg[4][11]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[4][6] with 1st driver pin 'compression_1/hash_var_reg[4][6]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[4][6] with 2nd driver pin 'compression_1/hash_var_reg[4][6]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[4][25] with 1st driver pin 'compression_1/hash_var_reg[4][25]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[4][25] with 2nd driver pin 'compression_1/hash_var_reg[4][25]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[4][12] with 1st driver pin 'compression_1/hash_var_reg[4][12]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[4][12] with 2nd driver pin 'compression_1/hash_var_reg[4][12]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[4][7] with 1st driver pin 'compression_1/hash_var_reg[4][7]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[4][7] with 2nd driver pin 'compression_1/hash_var_reg[4][7]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[4][26] with 1st driver pin 'compression_1/hash_var_reg[4][26]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[4][26] with 2nd driver pin 'compression_1/hash_var_reg[4][26]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[4][13] with 1st driver pin 'compression_1/hash_var_reg[4][13]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[4][13] with 2nd driver pin 'compression_1/hash_var_reg[4][13]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[4][8] with 1st driver pin 'compression_1/hash_var_reg[4][8]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[4][8] with 2nd driver pin 'compression_1/hash_var_reg[4][8]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[4][27] with 1st driver pin 'compression_1/hash_var_reg[4][27]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[4][27] with 2nd driver pin 'compression_1/hash_var_reg[4][27]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[4][14] with 1st driver pin 'compression_1/hash_var_reg[4][14]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[4][14] with 2nd driver pin 'compression_1/hash_var_reg[4][14]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[4][9] with 1st driver pin 'compression_1/hash_var_reg[4][9]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[4][9] with 2nd driver pin 'compression_1/hash_var_reg[4][9]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[4][28] with 1st driver pin 'compression_1/hash_var_reg[4][28]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[4][28] with 2nd driver pin 'compression_1/hash_var_reg[4][28]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[4][15] with 1st driver pin 'compression_1/hash_var_reg[4][15]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[4][15] with 2nd driver pin 'compression_1/hash_var_reg[4][15]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[4][10] with 1st driver pin 'compression_1/hash_var_reg[4][10]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[4][10] with 2nd driver pin 'compression_1/hash_var_reg[4][10]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[4][29] with 1st driver pin 'compression_1/hash_var_reg[4][29]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[4][29] with 2nd driver pin 'compression_1/hash_var_reg[4][29]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[4][16] with 1st driver pin 'compression_1/hash_var_reg[4][16]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[4][16] with 2nd driver pin 'compression_1/hash_var_reg[4][16]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[4][30] with 1st driver pin 'compression_1/hash_var_reg[4][30]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[4][30] with 2nd driver pin 'compression_1/hash_var_reg[4][30]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[4][17] with 1st driver pin 'compression_1/hash_var_reg[4][17]__0/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:54]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net hash_var[4][17] with 2nd driver pin 'compression_1/hash_var_reg[4][17]/Q' [C:/Users/User01/EE532/EE532.srcs/sources_1/new/Compression.sv:76]
+INFO: [Common 17-14] Message 'Synth 8-3352' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|      578|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 649.070 ; gain = 391.555
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 649.070 ; gain = 391.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 649.070 ; gain = 391.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 649.070 ; gain = 391.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 649.070 ; gain = 391.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     3|
+|2     |CARRY4 |   216|
+|3     |LUT1   |   274|
+|4     |LUT2   |    96|
+|5     |LUT3   |   192|
+|6     |LUT4   |   592|
+|7     |LUT5   |   142|
+|8     |LUT6   |  1282|
+|9     |MUXF7  |   512|
+|10    |MUXF8  |   256|
+|11    |FDRE   |  1090|
+|12    |LD     |   578|
+|13    |IBUF   |     1|
+|14    |OBUF   |   257|
+|15    |OBUFT  |  1792|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------+---------------+------+
+|      |Instance        |Module         |Cells |
++------+----------------+---------------+------+
+|1     |top             |               |  7283|
+|2     |  compression_1 |Compression__1 |  2616|
+|3     |  compression_2 |Compression    |  2616|
++------+----------------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 649.070 ; gain = 391.555
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1158 critical warnings and 6801 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 649.070 ; gain = 391.555
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 649.070 ; gain = 391.555
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1563 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 578 instances were transformed.
+  LD => LDCE: 578 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+42 Infos, 325 Warnings, 102 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:39 . Memory (MB): peak = 673.281 ; gain = 428.648
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/User01/EE532/EE532.runs/synth_1/SHA256.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file SHA256_utilization_synth.rpt -pb SHA256_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.111 . Memory (MB): peak = 673.281 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Jun  2 11:09:30 2021...
